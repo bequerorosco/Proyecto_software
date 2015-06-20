@@ -1,0 +1,4 @@
+observaciones requerimientos y casos de uso
+----------------------------------------------
+- No adjunta requerimientos
+- No adjunta casos de uso
