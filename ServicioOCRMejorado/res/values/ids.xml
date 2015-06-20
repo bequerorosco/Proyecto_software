@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ 
+ -->
+<resources>
+  <!-- Messages IDs -->
+  <item type="id" name="assetsmanager_installingdone"/>
+  <item type="id" name="assetsmanager_installingcorrupted"/>
+  
+  <item type="id" name="cameramanager_requestpicture"/>
+  <item type="id" name="cameramanager_focus_succeded"/>
+  <item type="id" name="cameramanager_focus_failed"/>
+  
+  <item type="id" name="downloadmanager_downloadFinishedError"/>
+  <item type="id" name="downloadmanager_downloadFinishedOK"/>
+  <item type="id" name="downloadmanager_unziping"/>
+  <item type="id" name="downloadmanager_downloadFinishedErrorSdcard"/>
+
+  <item type="id" name="preferences_MinWordConfidence"/>
+  <item type="id" name="preferences_MinOverallConfidence"/>
+  <item type="id" name="preferences_selectedLang2Download"/>
+
+  <item type="id" name="mezzofanti_ocrFinished"/>
+  <item type="id" name="mezzofanti_clickEditText"/>
+  <item type="id" name="mezzofanti_clickSelectText"/>  
+  <item type="id" name="mezzofanti_statusTranslateAll"/>
+  <item type="id" name="mezzofanti_statusWord"/>
+  <item type="id" name="mezzofanti_statusSelection"/>
+  <item type="id" name="mezzofanti_statusEdit"/>
+  <item type="id" name="mezzofanti_invalidateView"/>
+  <item type="id" name="mezzofanti_startCamera"/>
+  <item type="id" name="mezzofanti_restartCaptureMode"/>
+  
+  <item type="id" name="translateactivity_finished"/>
+  <item type="id" name="translateactivity_createEditTextLayout"/>
+  <item type="id" name="translateactivity_dialogid"/>
+  <item type="id" name="translateactivity_finishedintern"/>
+
+  
+  <item type="id" name="installactivity_killApp"/>
+
+  <item type="id" name="resultsactivity_clickEditText"/>
+  <item type="id" name="resultsactivity_clickSelectText"/>  
+  <item type="id" name="resultsactivity_statusTranslateAll"/>
+  <item type="id" name="resultsactivity_statusWord"/>
+  <item type="id" name="resultsactivity_statusSelection"/>
+  <item type="id" name="resultsactivity_statusEdit"/>
+  <item type="id" name="resultsactivity_invalidateView"/>
+  <item type="id" name="resultsactivity_startCamera"/>
+  <item type="id" name="resultsactivity_restartCaptureMode"/>
+  <item type="id" name="resultsactivity_displayWarning"/>
+
+  <item type="id" name="doOcr"/>
+  
+  </resources>

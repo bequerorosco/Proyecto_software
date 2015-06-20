@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+<!-- Capture Mode -->
+
+	<!-- Camera Preview background -->
+	<SurfaceView android:id="@+id/mezzofanti_preview_view"
+               	 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_centerInParent="true"
+             >
+    
+	    <com.itwizard.mezzofanti.CustomImageButton
+	            android:id="@+id/mezzofanti_button_camerabutton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginRight="13dip"
+                android:layout_marginTop="13dip"
+	            />
+	
+	</RelativeLayout>
+	
+	<!-- View finder for drawing camera rectangle and laser beam on focus -->	
+  	<com.itwizard.mezzofanti.CaptureLayout
+      			 android:id="@+id/mezzofanti_capturelayout_view"
+      			 android:layout_width="fill_parent"
+      			 android:layout_height="fill_parent"
+      			 android:background="@color/transparent"/>
+
+	<!-- Layout for cool looking on camera preview -->
+  	<LinearLayout
+  				 android:id="@+id/mezzofanti_cool_layout"
+      			 android:orientation="vertical"
+      			 android:layout_width="fill_parent"
+      			 android:layout_height="fill_parent"
+      			 android:background="@color/transparent">
+
+		<!-- Transparent frame -->
+	    <FrameLayout
+		         android:layout_width="fill_parent"
+		         android:layout_height="fill_parent"
+		         android:layout_weight="1"
+		         android:background="@color/transparent"/>
+
+			<!-- Status text frame -->
+		    <LinearLayout android:id="@+id/mezzofanti_status_view"
+		                  android:orientation="horizontal"
+		                  android:layout_width="fill_parent"
+		                  android:layout_height="wrap_content"
+		                  android:layout_weight="0"
+		                  android:background="@color/status_view"
+		                  android:baselineAligned="false"
+		                  android:padding="4px">
+				  <com.itwizard.mezzofanti.CustomImageButton
+				  		  android:id="@+id/mezzofanti_button_switch"
+						  android:layout_width="wrap_content"
+						  android:layout_height="wrap_content"/>
+
+				  <!-- Status text -->		
+			      <TextView android:id="@+id/mezzofanti_status_text_view"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="@string/mezzofanti_msg_default_status"
+			                android:textColor="@color/status_text"
+			                android.textSize="14sp"/>
+			                
+				  <com.itwizard.mezzofanti.CustomImageButton
+				  		  android:id="@+id/mezzofanti_button_delone"
+						  android:layout_width="50px"
+						  android:layout_height="wrap_content"
+						  android:visibility="gone"
+						  />
+						  
+				  <com.itwizard.mezzofanti.CustomImageButton
+				  		  android:id="@+id/mezzofanti_button_gotoresults"
+						  android:layout_width="wrap_content"
+						  android:layout_height="wrap_content"
+						  android:visibility="gone"
+						  />
+						  
+		
+		    </LinearLayout>
+
+
+
+  	</LinearLayout>
+  	
+  	
+
+</FrameLayout>

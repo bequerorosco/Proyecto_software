@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.uah.servicioocr"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/ocr_uah" android:label="@string/app_name">
+        <activity android:name="com.uah.servicioocr.ServicioOCR"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>            
+        </activity>
+        <activity android:name="com.uah.explorador.ExploradorArchivos"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.itwizard.mezzofanti.Mezzofanti"
+                  android:screenOrientation="portrait"
+              	  android:configChanges="orientation|keyboardHidden"
+              	  android:theme="@android:style/Theme.NoDisplay"
+              	  android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.itwizard.mezzofanti.PreferencesActivity"
+              android:label="@string/preferences_name">
+    	</activity>
+        <activity android:name="com.itwizard.mezzofanti.InstallActivity"
+              android:label="@string/installactivity_name">
+    	</activity>
+        <activity android:name="com.itwizard.mezzofanti.ResultsActivity"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:label="@string/resultsactivity_name">
+        </activity>
+        <activity android:name="com.itwizard.mezzofanti.TranslateActivity"
+              android:label="@string/translateactivity_name"                  
+              android:screenOrientation="portrait"
+              android:configChanges="orientation|keyboardHidden"
+              android:theme="@android:style/Theme.NoDisplay">
+    	</activity>
+    <service android:name="com.uah.servicioocr.MiServicio"></service>   
+    <service android:name="com.uah.servicioocr.ServicioBackground"></service>
+</application>
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest> 

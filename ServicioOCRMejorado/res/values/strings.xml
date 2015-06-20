@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="mezzofanti_appName">Mezzo Custom</string>
+    <string name="mezzofanti_ocrResult">Your ocr result here</string>
+  	<string name="mezzofanti_msg_default_status">Press camera button to start OCR.</string>
+  	<string name="mezzofanti_status_text">Your status here</string>
+	<string name="mezzofanti_ocr_processing_title">Text-recognition in progress:</string>
+	<string name="mezzofanti_ocr_processing_body_begin">using the</string>
+	<string name="mezzofanti_ocr_processing_body_end">dictionary.</string>
+	<string name="mezzofanti_status_bar_vertical">Vertical </string>
+	<string name="mezzofanti_status_bar_horizontal">Horizontal </string>
+	<string name="mezzofanti_status_bar_updown">up/down</string>
+	<string name="mezzofanti_status_bar_ocr_dict">OCR dictionary:</string>
+	<string name="mezzofanti_status_bar_orientation">orientation:</string>
+    <string name="mezzofanti_nolanginstalled_title">Warning</string>
+    <string name="mezzofanti_nolanginstalled_body">No languages installed, please install using "menu->preferences->download languages"</string>
+    <string name="mezzofanti_nolanginstalled_ok">OK</string>
+	
+    <string name="resultsactivity_add_word_to_dictionary_yes">Yes</string>    
+    <string name="resultsactivity_add_word_to_dictionary_no">No</string>    	
+	<string name="resultsactivity_addword2dict_title">Add word to dictionary</string>
+	<string name="resultsactivity_addword2dict_message1">Do you want to add the word</string>
+	<string name="resultsactivity_addword2dict_message2">to the</string>
+	<string name="resultsactivity_addword2dict_message3">dictionary?</string>
+    <string name="resultsactivity_selected_word">Selected word: </string>
+    <string name="resultsactivity_ocr_trust">OCR trust: </string>
+    <string name="resultsactivity_ocr_valid_word">Valid</string>  
+    <string name="resultsactivity_ocr_valid_word2">word:</string>
+    <string name="resultsactivity_resultsmode_selected_text">Selected text: </string>
+    <string name="resultsactivity_resultsmode_selected_word_none">Selected word: none</string>
+    <string name="resultsactivity_resultsmode_selected_all_text">All text: translate/email/sms.</string>
+    <string name="resultsactivity_resultsmode_mean_confidence">Mean OCR confidence is</string>
+    <string name="resultsactivity_resultsmode_selected_single_word">Single-word: translate/google/dictionary/wiki.</string>
+    <string name="resultsactivity_resultsmode_selected_multiple_words">Multiple-words: translate/google/dictionary/wiki.</string>
+    <string name="resultsactivity_resultsmode_edit_mode_back">To end Edit mode, press Back.</string>
+	<string name="resultsactivity_ocrbadresults_title">Warning: </string>
+	<string name="resultsactivity_ocrbadresults_msg1">The OCR confidence is</string>
+	<string name="resultsactivity_ocrbadresults_msg2">(max=100) \n\n
+This may happen for one of the following reasons: \n
+- the OCR was optimized for speed, thus the quality is low (consider changing "Settings->speed vs quality")\n
+- the angle of the camera relative to the text was more than the OCR could handle (consider taking the snapshot with the smallest angle to the text as possible)\n
+- there was too much light in the picture (consider changing the position of the paper)\n\n</string>
+	<string name="resultsactivity_ocrbadresults_ok">OK</string>
+	
+    <string name="mezzofanti_capturemode_statustext_switchtosmall">switch to small capture mode</string>
+    <string name="mezzofanti_capturemode_statustext_switchtolarge">switch to large capture mode</string>
+    <string name="mezzofanti_capturemode_statustext_switchtolarge2">delete-last / go-to-results</string>	
+ 
+
+
+    <!-- Menu -->
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_about">About us</string>
+    <string name="menu_feedback">Feedback</string>
+
+
+    
+	<!-- Preferences -->
+    <string name="preferences_helpTitle">Help</string>    
+    <string name="preferences_msg_help_step1">Welcome to Mezzofanti - Augmented reality through text-recognition.\n
+    The application at a glance:\n
+1. Select a text of interest (ex: menu at a restaurant, tourist information sign, etc), and take a photo. The internal-OCR engine will start Text Recognition.\n 
+2. Use Mezzofanti to translate the text (or parts of it) to any one of over forty languages, or to google it on the web or on Wikipedia.\n
+    \n
+    More insides about step 1 - Grabbing the picture and settings\n\n
+    - you can switch between line/full-screen recognition\n
+    - take the picture either with the "camera button" or by "long-press" on the screen
+    - you can select either horizontal or vertical orientation while taking the picture, when the focus button is pressed you will observe indicators about your orientation\n
+    - please make sure the camera focuses: green=focused, red=unfocused
+    - the OCR will work best if the text is parallel to one of the margins (note: with a small tolerance of ~15 degree angle)\n
+    - once the picture is taken, the OCR will start processing. Depending on the picture quality, and the amount of text, the processing may take roughly between 1-20 seconds.\n
+	- to improve the speed of the OCR (in the detriment of the quality) you can use select from options "Settings->Speed/Quality ratio"\n
+	- the OCR uses some language-specific files, by default the application has the English language installed, if you want to install another language to use with OCR, please go to "Settings->Download new languages"\n
+	- if you are taking pictures with uneven light source, you may consider using the "Settings->Use uneven light filter" (note: this will add to the OCR processing time)\n
+	- please select "Settings->Skip intro at startup" to enable/disable the intro message when the application starts\n
+	- please select "Settring->Restore factory settings" if you want to switch back to the default settings.\n
+	\n
+	Enjoy using Mezzofanti! ;)\n
+	The Wizard Team.\n
+	\n
+	PS: Please do not hesitate to write us feedback "Menu->Feedback". We are appreciating your thoughts.\n
+    </string>
+    
+    <string name="preferences_msg_help_step2">Welcome to Mezzofanti!\n
+    More insides about step 2 - Using the results\n\n
+    Once the OCR has finished, you will be displayed the OCRed text along with confidence information in the status box.\n 
+    First thing you should make sure the text is similar to the original image. Mezzofanti will span the text, using italics where the word has a low confidence or is not a valid dictionary word. Pressing each word you can see more info about it.\n
+    If you want to edit/modify the text you may do so using the appropriate "Edit" button. Note: if you are not happy with the OCR results, please take again the picture using increased "Settings->Speed/Quality ratio", also consider either an even light source for the paper surface (consult also the internal OCR image if needed), or use the "Settings->Use uneven light filter".\n
+    When you are happy with the text, you can:\n 
+    - translate it in one of the 40 available languages\n
+    - search parts of the text on Google\n
+    - search parts of the text on Wiki\n
+    - get information about a word from WikiDictionary\n
+    With the options above, you may be interested to use the whole text or just select parts of it, for this use the "Select" button.\n 
+    \n
+    At any time you can email/sms the text to yourself for later use or a friend.\n
+    If you want to restart the whole process with another text, just hit the back button.\n  
+	\n
+	Enjoy using Mezzofanti! ;)\n
+	The Wizard Team.\n
+	\n
+	PS: Please do not hesitate to write us feedback "Menu->Feedback". We are appreciating your thoughts.\n
+    </string>
+    
+    
+    
+	<!-- About -->
+    <string name="preferences_aboutTitle">About us</string>    
+    <string name="preferences_msg_about">
+    More about the engine:\n
+    - the internal text-recognition engine: Tesseract 2.03 - developed by Google and released under the Apache License 2.0\n
+    - the translation engine - based on "Google translate" - API developed by Google and released under the Apache License\n
+    - all code is source free, released under Apache License 2.0, for more information and the code please visit out website\n
+    \n
+    More about Mezzofanti:\n 
+    Giuseppe Caspar Mezzofanti (19 September 1774 – 15 March 1849) was an Italian cardinal and famed linguist and hyperpolyglot. Born and educated in Bologna, he completed his theological studies before he had reached the minimum age for ordination as a priest; he was ordained in 1797. In the same year, he became professor of Arabic at the University of Bologna. He later lost the position for refusing to take the oath of allegiance required by the Cisalpine Republic, which governed Bologna at the time.\n
+    Mezzofanti was well-known for being a hyperpolyglot who fluently spoke thirty-eight languages and forty dialects, despite never traveling outside of Italy. He spoke at least twenty-eight languages perfectly: English, Welsh, Scottish Gaelic, German, Hebrew, Arabic, Aramaic, Coptic, Armenian, Persian, Turkish, Maltese, Ancient Greek, Modern Greek, Latin, Italian, Spanish, Portuguese, French, Swedish, Danish, Dutch, Russian, Polish, Czech, Hungarian, Chinese.\n
+	\n    
+    More about IT Wizard:\n 
+	We started working together as a team in 2002 as preparation for IEEE’s Computer Society International Design Competition. Following our first place in the world finals, we decided to join our expertise in hardware design and software development.The result was a young, tireless and enthusiastic team, Wizard, focused on providing companies with functioning prototypes and production solutions for their ideas. Our past activity involved extensive consulting on and enhancing of specific parts of existing embedded projects, software defined radios, mobile phone development.\n
+	Members of Wizard team have been awarded gold medals for participation in past prestigious international competitions, such as the IEEE’s CSIDC and ACM’s ICPC contests. Our skills are reflected in Certificates of Excellence from the Romanian National Association of Software Industry, Romanian Ministry of Youth and Sport, and IEEE. Our results have also been published and presented at international events. Last, but not least, our trainees won top places at prestigious international competitions such as IEEE’s CSIDC and Microsoft’s Windows Embedded Challenge.\n
+
+  	\n
+	Enjoy using Mezzofanti! ;)\n
+	The Wizard Team.\n
+	\n
+	PS: Please do not hesitate to write us feedback "Menu->Feedback". We are appreciating your thoughts.\n
+    </string>
+    
+    
+    
+    
+    
+    
+    
+	<!-- Settings -->
+	<string name="preferences_name">Settings</string>
+	<string name="preferences_general_title">General settings</string>
+	<string name="preferences_skip_intro_at_startup">Skip intro at start</string>
+	<string name="preferences_OCR_title">OCR settings</string>
+	<string name="preferences_use_image_ligth_filter">Use uneven light filter</string>
+	<string name="preferences_display_debug_image">Display internal OCR image</string>
+	<string name="preferences_speed_quality">Speed/Quality ratio</string>
+	<string name="preferences_set_OCR_language">Set OCR dictionary language</string>
+	<string name="preferences_download_language">Download new languages</string>
+	<string name="preferences_min_overall_confidence">Min overall confidence</string>
+	<string name="preferences_min_word_confidence">Min word confidence</string>
+	<string name="preferences_translate_from_settings">Default translate-from</string>
+	<string name="preferences_translate_to_settings">Default translate-in</string>
+	<string name="preferences_restore_factory_settings_message">Are you sure?</string>
+	<string name="preferences_restore_factory_settings_button_cancel">Cancel</string>
+	<string name="preferences_restore_factory_settings_button_ok">OK</string>
+	<string name="preferences_restore_factory_settings_title">Restore factory settings</string>
+    <string name="preferences_button_cancel">OK</string>
+    <string name="preferences_itwiz_url">http://www.itwizard.ro</string>
+    <string name="preferences_button_open_browser">ITWizard web-site</string>
+    
+	<string name="preferencesactivity_reinstall"> - reinstall</string>
+	<string name="preferencesactivity_cannotaccessinternet">cannot access internet</string>
+	<string name="preferencesactivity_warning">Warning:</string>
+	<string name="preferencesactivity_problems">Problems accessing language server. Please make sure internet connection is ok, before downloading a new language.</string>
+	<string name="preferencesactivity_rfs_title">Restore factory settings</string>
+	<string name="preferencesactivity_rfs_body">Are you sure?</string>
+	<string name="preferencesactivity_imgsz_optimal">Optimal</string>
+	<string name="preferencesactivity_imgsz_medium">Medium</string>
+	<string name="preferencesactivity_rangedialog_title">Error Setting</string>
+	<string name="preferencesactivity_rangedialog_body">Value must be in betwen 0 and 100</string>
+	<string name="preferencesactivity_download_title">Download status:</string>
+	<string name="preferencesactivity_downloaderr_body">Errors while installing new language.</string>
+    <string name="preferencesactivity_downloaderrsdcard_body">No more space on SD Card, or SD Card removed.</string>
+	<string name="preferencesactivity_downloadok_body">Language installed succesfully.</string>
+	<string name="preferencesactivity_pd_title">In progress:</string>
+	<string name="preferencesactivity_pd_body1">downloading </string>
+	<string name="preferencesactivity_pd_body2">unziping .. </string>
+
+
+        
+    <!-- Install Activity -->
+  	<string name="installactivity_status_text">Your status here</string>
+    <string name="installactivity_mainMessage">
+    Welcome to Mezzofanti - Augmented reality through text-recognition.\n
+    \n
+    The application at a glance:\n
+1. Select a text of interest (ex: menu at a restaurant, tourist information sign, etc), and take a photo. The internal-OCR engine will start Text Recognition.\n 
+2. Use Mezzofanti to translate the text (or parts of it) to any one of over forty languages, or to google it on the web or on Wikipedia.\n
+\n
+Using Mezzofanti is just easy and fun to accomodate to a new language, or just get more information about the text in front of you.\n
+\n\n
+More about Mezzofanti: Giuseppe Caspar Mezzofanti (19 September 1774 – 15 March 1849) was an Italian cardinal and famed linguist and hyperpolyglot. Born and educated in Bologna, he completed his theological studies before he had reached the minimum age for ordination as a priest; he was ordained in 1797. In the same year, he became professor of Arabic at the University of Bologna. He later lost the position for refusing to take the oath of allegiance required by the Cisalpine Republic, which governed Bologna at the time.\n
+\n
+Mezzofanti was well-known for being a hyperpolyglot who fluently spoke thirty-eight languages and forty dialects, despite never traveling outside of Italy. He spoke at least twenty-eight languages perfectly: English, Welsh, Scottish Gaelic, German, Hebrew, Arabic, Aramaic, Coptic, Armenian, Persian, Turkish, Maltese, Ancient Greek, Modern Greek, Latin, Italian, Spanish, Portuguese, French, Swedish, Danish, Dutch, Russian, Polish, Czech, Hungarian, Chinese.\n
+\n
+More about IT Wizard: founded in 2005\n
+    We started working together as a team in 2002 as preparation for IEEE’s Computer Society International Design Competition. Following our first place in the world finals, we decided to join our expertise in hardware design and software development.The result was a young, tireless and enthusiastic team, Wizard, focused on providing companies with functioning prototypes and production solutions for their ideas. Our past activity involved extensive consulting on and enhancing of specific parts of existing embedded projects, software defined radios, mobile phone development.\n
+    Members of Wizard team have been awarded gold medals for participation in past prestigious international competitions, such as the IEEE’s CSIDC and ACM’s ICPC contests. Our skills are reflected in Certificates of Excellence from the Romanian National Association of Software Industry, Romanian Ministry of Youth and Sport, and IEEE. Our results have also been published and presented at international events. Last, but not least, our trainees won top places at prestigious international competitions such as IEEE’s CSIDC and Microsoft’s Windows Embedded Challenge.\n
+    
+	\n
+	Enjoy using Mezzofanti! ;)\n
+	The Wizard Team.\n
+	\n
+	PS: Please do not hesitate to write us feedback "Menu->Feedback". We are appreciating your thoughts.\n
+	\n
+    </string>
+    
+	<string name="installactivity_name">Install Activity</string>
+
+
+		
+    <!-- Language dialog -->
+	<string name="languagedialog_translateFrom">Translate from</string>
+	<string name="languagedialog_translateIn">Translate in</string>
+
+
+
+	<!-- Translate Activity -->
+    <string name="translateactivity_name">Translate Activity</string>
+  	<string name="translateactivity_inprogress">Translation in progress</string>
+  	<string name="translateactivity_translate_OK">Translation successfully finished.</string>
+  	<string name="translateactivity_translate_FALSE">Translation error / Internet connection errors.</string>
+    <string name="translateactivity_keep_text_yes">Yes</string>
+    <string name="translateactivity_keep_text_no">No</string>
+	<string name="translateactivity_dialog_keepeditedtext_title">Keep edited text</string>
+	<string name="translateactivity_dialog_keepeditedtext_body">Do you want to keep edited text?</string>
+
+    <!-- SD card messages -->
+    <string name="mezzofanti_sdcard_preparing">Preparing SD card</string>
+    <string name="mezzofanti_sdcard_unmount">Please insert the SD card before using Mezzofanti.</string>
+    <string name="mezzofanti_sdcard_full">Your SD card is full.</string>
+    <string name="mezzofanti_sdcard_wait">Please wait.</string>
+
+    <string name="assetsmanager_title">Warning: </string>
+    <string name="assetsmanager_msg1">Not enough space for installation on external storage - requested:</string>
+    <string name="assetsmanager_msg2">free:</string>
+    <string name="assetsmanager_ok">OK</string>
+
+    <string name="mezzofanti_capturelayout_processing">Processing using</string>
+    <string name="mezzofanti_capturelayout_processing2">dictionary.</string>
+    <string name="mezzofanti_capturelayout_takingpicture">Taking the picture ...</string>            
+
+
+    <string name="resultsactivity_name">Results</string>
+    <string name="resultsactivity_status_text">Your status here</string>
+    
+    <!-- AÑADIDAS -->
+    <string name="hello">Hola Mundo, Servicio OCR</string>
+    <string name="app_name">Servicio OCR</string>
+    <string name="titulo">Servicio Contador</string>
+    <string name="initService">Arrancar servicio</string>
+    <string name="stopService">Parar servicio</string>
+    <string name="title">Servicio OCR</string>
+    <string name="route">Pulsa Explorar</string>
+    <string name="explore">Explorar</string>
+    <string name="send">Enviar</string>
+    <string name="sin_archivos">Este directorio está vacío</string>
+    <string name="raiz">[Volver arriba]</string>
+    <string name="titulo_no_directorio">No es un directorio</string>
+    <string name="no_directorio">Eso es un archivo. ¡No un directorio!</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="imagen_seleccionada">Imagen seleccionada:</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="formato_incorrecto">Formato incorrecto</string>
+    <string name="no_imagen">El archivo seleccionado no es una imagen válida</string>
+    <string name="no_seleccion1">Imagen no seleccionada</string>
+    <string name="no_seleccion2">No hay ninguna imagen seleccionada. Pulsa el botón Examinar para escoger una imagen.</string>
+    <!-- FIN AÑADIDAS -->
+    <string name="confirmation">¿Desea enviar la imagen para su transformación y salir de la app?</string>
+    <string name="affirmation">Sí</string>
+    <string name="ocr_processing">Traducción OCR en proceso</string>
+    <string name="negation">No</string>
+    <string name="send_confirmation">Confirmación de envío</string>
+    <string name="count">Contador: </string>
+    
+</resources>
