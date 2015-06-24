@@ -1,9 +1,0 @@
-c:\users\jm\documents\visual studio 2010\Projects\reconocedorPalavbras\reconocedorPalavbras\obj\x86\Debug\ResolveAssemblyReference.cache
-c:\users\jm\documents\visual studio 2010\Projects\reconocedorPalavbras\reconocedorPalavbras\obj\x86\Debug\reconocedorPalavbras.Form1.resources
-c:\users\jm\documents\visual studio 2010\Projects\reconocedorPalavbras\reconocedorPalavbras\obj\x86\Debug\reconocedorPalavbras.Properties.Resources.resources
-c:\users\jm\documents\visual studio 2010\Projects\reconocedorPalavbras\reconocedorPalavbras\obj\x86\Debug\GenerateResource.read.1.tlog
-c:\users\jm\documents\visual studio 2010\Projects\reconocedorPalavbras\reconocedorPalavbras\obj\x86\Debug\GenerateResource.write.1.tlog
-c:\users\jm\documents\visual studio 2010\Projects\reconocedorPalavbras\reconocedorPalavbras\bin\Debug\reconocedorPalavbras.exe
-c:\users\jm\documents\visual studio 2010\Projects\reconocedorPalavbras\reconocedorPalavbras\bin\Debug\reconocedorPalavbras.pdb
-c:\users\jm\documents\visual studio 2010\Projects\reconocedorPalavbras\reconocedorPalavbras\obj\x86\Debug\reconocedorPalavbras.exe
-c:\users\jm\documents\visual studio 2010\Projects\reconocedorPalavbras\reconocedorPalavbras\obj\x86\Debug\reconocedorPalavbras.pdb
