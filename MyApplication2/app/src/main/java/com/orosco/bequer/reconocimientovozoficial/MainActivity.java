@@ -2,6 +2,7 @@ package com.orosco.bequer.reconocimientovozoficial;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -12,28 +13,38 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        
+        Log.d("ReconocimientoVoz", "onRestart");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        Log.d("ReconocimientoVoz", "onPause");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        Log.d("ReconocimientoVoz", "onResume");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        Log.d("ReconocimientoVoz", "onStart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("ReconocimientoVoz", "onDestroy");
     }
 
     @Override
