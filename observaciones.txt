@@ -2,3 +2,9 @@ observaciones requerimientos y casos de uso
 ----------------------------------------------
 - No adjunta requerimientos
 - No adjunta casos de uso
+
+OBSERVACIONES SEGUNDO AVANCE
+---------------------------------------
+- No hiciste merge de las observaciones que te he hecho del primer avance
+- No puedo ver nada más hasta que no hagas merge
+- Todo lo que tengas que presentar debe estar en la rama master
