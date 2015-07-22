@@ -12,7 +12,7 @@
             android:layout_gravity="center"
             android:layout_span="2"
             android:textColor="#890000"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -29,6 +29,7 @@
             android:text="Usuario"
             android:textSize="20sp"
             android:textColor="#000"
+            android:textStyle="bold"
             android:layout_marginLeft="20dip"
             android:id="@+id/textViewUsername" />
 
@@ -50,6 +51,7 @@
             android:textSize="20sp"
             android:textColor="#000"
             android:layout_marginLeft="20dip"
+            android:textStyle="bold"
             android:id="@+id/textViewPassword" />
 
         <EditText
@@ -68,6 +70,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ingresar"
-            android:id="@+id/button" />
+            android:id="@+id/button"
+            />
+
     </TableRow>
 </TableLayout>
