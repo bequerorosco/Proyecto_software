@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow
+        android:padding="1dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:textColor="#890000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/textView" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="20dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dip"
+            android:id="@+id/textViewUsername" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:id="@+id/editTextUsername" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="20dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clave"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dip"
+            android:id="@+id/textViewPassword" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:id="@+id/editTextPassword"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="20dip"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:id="@+id/button" />
+    </TableRow>
+</TableLayout>
