@@ -33,8 +33,8 @@ public class Splash extends Activity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 iv.startAnimation(an2);
-                setContentView(R.layout.table_layout);
-                Intent i=new Intent(getBaseContext(),MainActivity.class);
+
+                Intent i=new Intent(getBaseContext(),LayoutActivity.class);
                 startActivity(i);
 
 
