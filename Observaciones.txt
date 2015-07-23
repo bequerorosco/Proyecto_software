@@ -1,0 +1,5 @@
+Observaciones del tercer avance
+---------------------------------------------
+1. Se les pidió que la rama master es la que se debe actualizar, tu proyecto tiene una rama inicio que es la que esta por default en github. Yo me estoy sincronizando solamente con master, Tengan cuidado con eso. esa rama no puede andar sola es necesario hacerle merge con la master ne algun momento.
+2. Seguimos con los problemas de sincronización, he hecho un nuevo fork por ultima vez en su proyecto, la proxima falla simplemnte no se les va a revisar. Todavia no comprenden Git
+3. No presentan avance adicioal despues de la segunda revision
