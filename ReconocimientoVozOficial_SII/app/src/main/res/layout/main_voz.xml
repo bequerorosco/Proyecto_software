@@ -62,18 +62,10 @@
             android:id="@+id/editTextPassword"/>
     </TableRow>
 
-    <TableRow
-        android:layout_marginTop="20dip"
-        android:gravity="center">
-
-    </TableRow>
 
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </TableRow>
+
 
 
 
