@@ -7,4 +7,8 @@
 
 
     <string name="emptystr" />
+
+    <string name="str1">Hablame</string>
+    <string name="str2">Habla rápido</string>
+    <string name="str3">Habla MAS</string>
 </resources>
