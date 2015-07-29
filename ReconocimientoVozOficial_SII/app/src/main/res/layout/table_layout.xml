@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#ff4dafde">
 
     <TableRow
         android:padding="1dp"
@@ -11,12 +12,19 @@
             android:layout_width="wrap_content"
             android:layout_gravity="center"
             android:layout_span="2"
-            android:textColor="#890000"
-            android:textSize="20sp"
+            android:textColor="#fffefdff"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:text="Login"
             android:id="@+id/textView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/loo"
+            android:layout_column="3" />
 
     </TableRow>
 
@@ -86,7 +94,8 @@
             android:layout_height="wrap_content"
             android:text="Ingresar"
             android:id="@+id/buttonLogin"
-            android:layout_column="3" />
+            android:layout_column="1"
+            android:layout_span="3" />
     </TableRow>
 
 
@@ -97,9 +106,4 @@
 
     </TableRow>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:src="@drawable/fondlogin" />
 </TableLayout>
