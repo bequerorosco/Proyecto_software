@@ -7,12 +7,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-
-
-
-/**
- * Created by user on 22/07/2015.
- */
 public class Splash extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState){

@@ -1,6 +1,4 @@
-package pe.networkingunajma.com.reconocimientovozoficial_sii;
-
-
+package pe.networkingunajma.com.formulariovozoficial;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,10 +12,10 @@ import android.widget.EditText;
 
 import java.util.Locale;
 
-import static pe.networkingunajma.com.reconocimientovozoficial_sii.R.menu.menu_main;
+import static pe.networkingunajma.com.formulariovozoficial.R.menu.menu_main;
 
 
-public class MainActivity_leer extends Activity implements OnInitListener {
+public class MainActivity extends Activity implements OnInitListener {
 
     //Motor de voz
     private TextToSpeech tts;
@@ -35,7 +33,7 @@ public class MainActivity_leer extends Activity implements OnInitListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_leer);
+        setContentView(R.layout.activity_main);
 
         //=====================================================
         tts = new TextToSpeech( this, this );
@@ -66,7 +64,7 @@ public class MainActivity_leer extends Activity implements OnInitListener {
             }
 
         });
-
+        //habla en ingles
         button3.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -99,7 +97,7 @@ public class MainActivity_leer extends Activity implements OnInitListener {
 
         if ( status == TextToSpeech.SUCCESS ) {
 
-            //coloca lenguaje por defecto en el celular, en nuestro caso el lenguaje es aspa?ol ;)
+            //coloca lenguaje por defecto en el celular, en nuestro caso el lenguaje es aspa�ol ;)
             int result = tts.setLanguage( Locale.getDefault() );
 
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {

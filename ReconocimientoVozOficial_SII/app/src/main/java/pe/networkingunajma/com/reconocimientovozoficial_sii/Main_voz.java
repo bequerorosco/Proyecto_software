@@ -1,65 +1,50 @@
 package pe.networkingunajma.com.reconocimientovozoficial_sii;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.speech.RecognizerIntent;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-import java.util.ArrayList;
+/**
+ * Created by user on 22/07/2015.
+ */
+public class Main_voz  extends Activity{
 
+    private EditText userNameEditText;
+    private EditText passwordEditText;
 
-public class Main_voz extends ActionBarActivity {
-
-    private TextView resultText;
+    private Button loginButton;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate (Bundle savedInstance){
+        super.onCreate(savedInstance);
         setContentView(R.layout.main_voz);
-        resultText= (TextView)findViewById(R.id.TVresult);
-    }
 
+        userNameEditText = (EditText) findViewById(R.id.editTextUsername);
+        passwordEditText= (EditText) findViewById(R.id.editTextPassword);
 
+        loginButton=(Button)findViewById(R.id.buttonLogin);
 
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(userNameEditText.getText().toString().equals("admin")&&
+                        passwordEditText.getText().toString().equals("admin")
+                        ){
+                    Intent vozform= new Intent(Main_voz.this,MainActivity.class);
+                    startActivity(vozform);
 
+                }else
+                {
+                    Toast.makeText(getApplication(),"Usuario Incorrecto",Toast.LENGTH_SHORT).show();
+                }
 
-    public void onActivityResult(int request_code , int result_code, Intent i )
-    {
-
-        super.onActivityResult(request_code, result_code, i);
-        switch (request_code)
-        {
-            case 100: if(result_code== RESULT_OK && i !=null )
-            {
-                ArrayList<String> result = i.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                resultText.setText(result.get(0));
             }
-                break;
-        }
+        });
 
 
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }
