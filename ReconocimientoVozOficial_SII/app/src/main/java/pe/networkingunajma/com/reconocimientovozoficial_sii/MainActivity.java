@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.table_layout_voz);
+        setContentView(R.layout.splashh);
         resultText= (TextView)findViewById(R.id.TVresult);
     }
 
